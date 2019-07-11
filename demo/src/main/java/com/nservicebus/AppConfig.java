@@ -11,7 +11,7 @@ import Publish.PublishOrder;
 public class AppConfig {
     @Bean
     public static PublishOrder publishOrderConfigurer() {
-        DotNetSide.init(".\\target\\classes\\application.properties");
+        DotNetSide.init("./target/classes/application.properties");
         
         PublishOrder publishOrder = new PublishOrder();
         publishOrder.StartEndpoint();
